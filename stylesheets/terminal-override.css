@@ -1,0 +1,41 @@
+/* Override Material variables with Terminal.css styling */
+:root {
+  --md-primary-fg-color: var(--primary-color, #01BC79);
+  --md-primary-fg-color--light: var(--primary-color, #01BC79);
+  --md-primary-fg-color--dark: var(--primary-color, #01BC79);
+  --md-accent-fg-color: var(--secondary-color, #F39C12);
+  
+  /* Typography - Force monospace everywhere */
+  --md-text-font: "Courier New", monospace, monospace;
+  --md-code-font: "Courier New", monospace, monospace;
+  
+  /* Colors */
+  --md-default-bg-color: var(--background-color, #1A1A1A);
+  --md-default-fg-color: var(--font-color, #FFFFFF);
+  --md-code-bg-color: var(--block-background-color, #0F3460);
+}
+
+/* Apply Terminal.css base styles */
+body {
+  font-family: "Courier New", monospace, monospace !important;
+  background-color: var(--background-color, #1A1A1A) !important;
+  color: var(--font-color, #FFFFFF) !important;
+}
+
+/* Style headers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Courier New", monospace, monospace !important;
+  color: var(--font-color, #FFFFFF) !important;
+}
+
+/* Style the navigation and sidebar */
+.md-nav {
+  font-family: "Courier New", monospace, monospace !important;
+}
+
+/* Style tags specifically */
+.md-tag {
+  font-family: "Courier New", monospace, monospace !important;
+  background-color: var(--primary-color, #01BC79) !important;
+  color: var(--background-color, #1A1A1A) !important;
+}

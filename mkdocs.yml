@@ -27,3 +27,6 @@ nav:
   - Home: index.md
   - Blog:
     - blog/index.md
+
+extra_css:
+  - stylesheets/terminal-override.css
