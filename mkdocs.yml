@@ -29,7 +29,8 @@ nav:
     - blog/index.md
 
 extra_css:
-  - stylesheets/terminal-override.css
+  - https://unpkg.com/terminal.css@0.7.4/dist/terminal.min.css
+  - stylesheets/terminal-material-bridge.css
 
 markdown_extensions:
   - pymdownx.highlight:

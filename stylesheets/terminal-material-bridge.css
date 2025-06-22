@@ -1,0 +1,9 @@
+/* Bridge Terminal.css with Material components */
+.md-header, .md-nav, .md-content {
+  font-family: inherit !important;
+}
+
+/* Ensure tags work properly */
+.md-tag {
+  font-family: monospace, monospace !important;
+}
