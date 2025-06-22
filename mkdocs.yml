@@ -1,0 +1,22 @@
+site_name: A Search For Lost Time
+
+theme:
+  name: material
+  features:
+  - navigation.tabs
+  - navigation.sections
+  - toc.integrate
+  - navigation.top
+  - search.suggest
+  - search.highlight
+  - content.tabs.link
+  - content.code.annotation
+  - content.code.copy
+  language: en
+
+plugins:
+  - social
+  - search
+  - blog
+  - tags:
+      # tags_file: tags.md
