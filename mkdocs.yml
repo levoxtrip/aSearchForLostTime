@@ -17,6 +17,13 @@ theme:
 plugins:
   - social
   - search
-  - blog
+  - blog:
+      blog_dir: blog
+      post_dir: blog/posts
   - tags:
       # tags_file: tags.md
+
+nav:
+  - Home: index.md
+  - Blog:
+    - blog/index.md
