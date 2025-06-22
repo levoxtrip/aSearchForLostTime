@@ -1,5 +1,5 @@
 site_name: A Search For Lost Time
-
+site_url: https://levoxtrip.github.io/aSearchForLostTime/
 theme:
   name: material
   features:
