@@ -7,6 +7,8 @@
 
 [CHOPs](./CHOP/index.md)
 
+[COMPs](./COMP/index.md)
+
 [DATs](./DAT/index.md)
 
 [SCRIPTING](./SCRIPTING/index.md)
