@@ -5,8 +5,6 @@
 
 [FX Gallery](./FX-Gallery/index.md)
 
-
-
 [Change Coloring TOP Texture](ChangeColoringImages.md)
 
 [Feedback Distortion With LensDistort](FeedbackDistortionLensDistort.md)

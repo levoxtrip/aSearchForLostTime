@@ -11,7 +11,12 @@
 
 [Define How Long CountCHOP Can't Be Retriggered](DefineHowCountCHOPCantRetrigger.md)
 
+[Delete Samples Beginning End Of CHOP](DeleteSamplesBeginningEndCHOP.md)
+
+
 [Let Value Slowly Decrease](LetValueSlowlyDecrease.md)
+
+[LagCHOP](LagCHOP.md)
 
 
 
