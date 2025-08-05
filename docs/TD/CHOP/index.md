@@ -3,6 +3,8 @@
 
 # CHOP
 
+[Animate Through Data Points](AnimateThroughDataPoints.md)
+
 [Assure CHOP Values Stay in Range](AssureCHOPValuesStayInRange.md)
 
 [Step CHOP Values With LimitCHOP](StepCHOPValuesWithLimitCHOP.md)

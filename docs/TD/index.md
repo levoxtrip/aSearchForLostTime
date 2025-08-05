@@ -12,6 +12,8 @@
 [DATs](./DAT/index.md)
 
 [SCRIPTING](./SCRIPTING/index.md)
-<!-- [Techniques](./TD/TECHNIQUES/index.md) -->
+
+[SOP](./SOP/index.md)
+
 [Interesting Links](InterestingLinks.md)
 
