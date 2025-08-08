@@ -4,6 +4,8 @@
 # VVVV
 [Animations](./Animations/index.md)
 
+[Audio](./Audio/index.md)
+
 [Collections](./Collections/index.md)
 
 [Handling Data and Values](./HandlingDataAndValues/index.md)
