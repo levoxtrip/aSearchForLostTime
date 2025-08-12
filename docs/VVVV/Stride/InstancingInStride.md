@@ -22,4 +22,4 @@ To translate all the instances we can plug 3D transformation nodes like `Scale(3
 *Example patch is available in the Help Browser in VVVV*
 
 ## Setting material values for each instance
-If we want to create different material properties for each instance we can use `ColorPerInstance` and `ValuePerInstance` and plug them into your material node. 
+If we want to create different material properties for each instance we can use `ColorPerInstance` and `ValuePerInstance` and plug them into the material node. 

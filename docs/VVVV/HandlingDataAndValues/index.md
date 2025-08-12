@@ -13,6 +13,8 @@ tags:
 
 [Extract Single Value From 2D.Rectangle Datatype](ExtractSingleValueFrom2DRectangleDatatype.md)
 
+[From Random Value To Random Color](FromRandomValueToRandomColor.md)
+
 [Holding Last Changed Value](HoldingLastChangedValue.md)
 
 [Wrap Value At Maximum Value with MOD](WrapValueAtMaxValueMOD.md)

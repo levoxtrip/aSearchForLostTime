@@ -6,6 +6,8 @@
 
 [Null Operation](NullOperation.md)
 
+[Join Values In F-String](JoinValuesInString.md)
+
 [Get The Height From Top](GetTheHeightFromTop.md)
 
 [Reference Values with Math Library](ReferenceValueswithMathLibrary.md)

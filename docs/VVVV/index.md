@@ -10,6 +10,8 @@
 
 [Handling Data and Values](./HandlingDataAndValues/index.md)
 
+[Managing Programs](./ManagingPrograms/index.md)
+
 [Stride](./Stride/index.md)
 
 [UI](./UI/index.md)
