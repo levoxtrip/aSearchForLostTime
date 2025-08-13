@@ -9,4 +9,8 @@
 
 [Displace Copied LineSOP By Force](DisplaceCopiedLineSOPbyForce.md)
 
+[Merge Lines Into Surface](MergeLinesIntoSurface.md)
+
 [Mouse Position To SOP Line](MousePositionSOPLine.md)
+
+[Particles Move Back To Source Shape](ParticlesMoveBackToSource.md)
