@@ -20,5 +20,7 @@
 
 [LagCHOP](LagCHOP.md)
 
+[Switch Between CHOPs](SwitchBetweenCHOPS.md)
+
 
 

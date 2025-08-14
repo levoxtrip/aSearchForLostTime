@@ -21,3 +21,7 @@ Get width/ height of child operator
 
 Get value from input cell
 `me.inputCell`
+
+## Inputs
+Count inputs of operator
+`len(op('switch1').inputs)`
