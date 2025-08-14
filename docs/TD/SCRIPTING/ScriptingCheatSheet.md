@@ -15,3 +15,9 @@ Get width and height from parent
 Get width/ height of child operator
 `op('/out1').width`
 `op('/out1').height`
+
+
+## Tables
+
+Get value from input cell
+`me.inputCell`

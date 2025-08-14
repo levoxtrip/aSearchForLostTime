@@ -18,4 +18,4 @@ If we then right click the `textDAT` and click `Run Script` we get a *local* `Ba
 
 If we then want to reference the variables in an operator we can use `me.var('VariableName')`
 
-If we want even more flexible variables like when we want to store the `SliderCOMP` and then get it's variable
+If we want even more flexible variables like when we want to store the `SliderCOMP` and then get it's variable.
