@@ -11,10 +11,13 @@
 
 [Convert Negative Values Into Positive](ConvertNegativeValuesIntoPositive.md)
 
+[Convert TOP data to Channel Data](ConvertTOPDataChannelData.md)
+
 [Define How Long CountCHOP Can't Be Retriggered](DefineHowCountCHOPCantRetrigger.md)
 
 [Delete Samples Beginning End Of CHOP](DeleteSamplesBeginningEndCHOP.md)
 
+[Detect How Fast Value Changes](DetectHowFastValueChanges.md)
 
 [Let Value Slowly Decrease](LetValueSlowlyDecrease.md)
 

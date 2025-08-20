@@ -25,3 +25,10 @@ Get value from input cell
 ## Inputs
 Count inputs of operator
 `len(op('switch1').inputs)`
+
+## Manipulate data
+
+Round values `round(val,2)`
+
+
+https://interactiveimmersive.io/blog/python/python-cheat-sheet-for-touchdesigner-developers/

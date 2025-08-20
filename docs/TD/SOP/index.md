@@ -9,8 +9,12 @@
 
 [Displace Copied LineSOP By Force](DisplaceCopiedLineSOPbyForce.md)
 
+[Import Specific Geo From FBX](ImportSpecificGeoFromFBX.md)
+
 [Merge Lines Into Surface](MergeLinesIntoSurface.md)
 
 [Mouse Position To SOP Line](MousePositionSOPLine.md)
 
 [Particles Move Back To Source Shape](ParticlesMoveBackToSource.md)
+
+[Point Sprite Particle System](PointSpriteParticleSystem.md)
