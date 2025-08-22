@@ -23,6 +23,8 @@
 
 [LagCHOP](LagCHOP.md)
 
+[Only Track Mouse Values In Window](OnlyTrackMouseValuesInWindow.md)
+
 [Switch Between CHOPs](SwitchBetweenCHOPS.md)
 
 

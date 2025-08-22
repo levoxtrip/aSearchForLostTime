@@ -10,3 +10,7 @@
 
 - Eliptical narrative
 
+
+
+## Materials
+Can I use an old/wasteful material and upcycle it to convey my idea?
