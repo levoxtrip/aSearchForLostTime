@@ -16,17 +16,21 @@ Get width/ height of child operator
 `op('/out1').width`
 `op('/out1').height`
 
+# Channels
+Referencing Channels
+`op('constant1')[0]` <- First channel 
+`op('constant1')['channelName']`
 
-## Tables
+# Tables
 
 Get value from input cell
 `me.inputCell`
 
-## Inputs
+# Inputs
 Count inputs of operator
 `len(op('switch1').inputs)`
 
-## Manipulate data
+# Manipulate data
 
 Round values `round(val,2)`
 

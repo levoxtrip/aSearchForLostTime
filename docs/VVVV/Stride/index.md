@@ -11,5 +11,7 @@
 
 [Instancing Shapes in Stride](InstancingInStride.md)
 
+[Store Texture In Queue](StoreTextureInQueue.md)
+
 
 

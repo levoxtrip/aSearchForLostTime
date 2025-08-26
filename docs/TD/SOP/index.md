@@ -9,6 +9,8 @@
 
 [Displace Copied LineSOP By Force](DisplaceCopiedLineSOPbyForce.md)
 
+[Distribute Points At Random Position](DistributePointsAtRandomPosition.md)
+
 [Import Specific Geo From FBX](ImportSpecificGeoFromFBX.md)
 
 [Merge Lines Into Surface](MergeLinesIntoSurface.md)
@@ -18,3 +20,5 @@
 [Particles Move Back To Source Shape](ParticlesMoveBackToSource.md)
 
 [Point Sprite Particle System](PointSpriteParticleSystem.md)
+
+[Rotate Camera On Path](RotateCameraOnPath.md)

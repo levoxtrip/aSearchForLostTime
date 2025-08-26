@@ -2,6 +2,8 @@
 
 
 # Animations
+[Count On MouseClick](CountMouseClick.md)
+
 [Create Ascending Value](CreateAscendingValue.md)
 
 [Fade In, Hold, Fade Out Value](FilterInHoldFilterOutValue.md)

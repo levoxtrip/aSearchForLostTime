@@ -15,3 +15,12 @@ An `Async Task` gets executed only once on a `Bang` event.
 `IsAssigned` gives back true if new value after execution is assigned, which allows to only show something if new value got assigned.
 
 The *Async* regions also have the `In Progress` outputs which allow us to execute/show information while the async task is working and we want to show for example a loading screen.
+
+`HoldLatest` keeps the last value it got from the *async* operation - until a new value comes.
+
+The `Sampler` shows a value for one frame and has a `OnData` output which can be useful to trigger for example *if* conditions.
+
+## Multiple outputs
+In `Async Loop` o `Async Task` if you want to output more than one value you either want to have a `Record`with your own datatype or you use `Tuple(Create)`.
+
+![Multiple Output Values Async](../img/OutputMultipleValuesAsync.png)
