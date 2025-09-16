@@ -18,5 +18,7 @@
 
 [Set Cook Flag Operator](SetCookFlagOperator.md)
 
+[Set Log Flag Operator](SetLogFlagOperatorScript.md)
+
 [Set Slider Value Via Script](SetSliderValueViaScript.md)
 

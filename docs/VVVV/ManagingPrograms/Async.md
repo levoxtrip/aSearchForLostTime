@@ -20,6 +20,8 @@ The *Async* regions also have the `In Progress` outputs which allow us to execut
 
 The `Sampler` shows a value for one frame and has a `OnData` output which can be useful to trigger for example *if* conditions.
 
+If you work with `Aync` operations that change your objects you have to work with *immutable objects*.
+
 ## Multiple outputs
 In `Async Loop` o `Async Task` if you want to output more than one value you either want to have a `Record`with your own datatype or you use `Tuple(Create)`.
 

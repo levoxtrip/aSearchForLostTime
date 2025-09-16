@@ -5,7 +5,7 @@ tags:
  - VVVV/Collections
 ---
 
-![reate Grid With For-Each Loops Img](../img/CreateGridWithForEachLoops.png)
+![Create Grid With For-Each Loops Img](../img/CreateGridWithForEachLoops.png)
 
 # Create Grid With For-Each Loops
 If we want to create a grid structure with spreads as the source for the position we can layer two `ForEach` regions and plug each spread source into the *Splicer* bar at the top of the `ForEach` region. 

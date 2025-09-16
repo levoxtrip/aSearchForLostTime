@@ -2,12 +2,13 @@
 
 
 # CHOP
+[Add Channels after each other into a Sequence](AddChannelsIntoSequenz.md)
 
 [Animate Through Data Points](AnimateThroughDataPoints.md)
 
 [Assure CHOP Values Stay in Range](AssureCHOPValuesStayInRange.md)
 
-[Step CHOP Values With LimitCHOP](StepCHOPValuesWithLimitCHOP.md)
+[Combining Channels in PatternCHOP](CombingChannelsPatternCHOP.md)
 
 [Convert Negative Values Into Positive](ConvertNegativeValuesIntoPositive.md)
 
@@ -19,11 +20,15 @@
 
 [Detect How Fast Value Changes](DetectHowFastValueChanges.md)
 
+[Hold last changed value](HoldLastChangedValue.md)
+
 [Let Value Slowly Decrease](LetValueSlowlyDecrease.md)
 
 [LagCHOP](LagCHOP.md)
 
 [Only Track Mouse Values In Window](OnlyTrackMouseValuesInWindow.md)
+
+[Step CHOP Values With LimitCHOP](StepCHOPValuesWithLimitCHOP.md)
 
 [Switch Between CHOPs](SwitchBetweenCHOPS.md)
 

@@ -6,6 +6,8 @@
 
 [Audio](./Audio/index.md)
 
+[Basics](Basics.md)
+
 [Collections](./Collections/index.md)
 
 [Handling Data and Values](./HandlingDataAndValues/index.md)

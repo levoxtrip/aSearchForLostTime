@@ -19,7 +19,9 @@ Get width/ height of child operator
 # Channels
 Referencing Channels
 `op('constant1')[0]` <- First channel 
+`op('constant1').chan(0)` <- First channel
 `op('constant1')['channelName']`
+`op('constant').chan(0).name` - Channelname
 
 # Tables
 

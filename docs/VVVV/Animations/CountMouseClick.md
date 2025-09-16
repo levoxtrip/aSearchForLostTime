@@ -8,4 +8,4 @@ tags:
 
 # Count On MouseClick
 
-To create a counter on mouse click we connect `Mouse` node with a `TogEdge` to make sure that it one mouse click per frame. Otherwise counter increases value per frame while the button is hold down.
+To create a counter on mouse click we connect `Mouse` node with a `TogEdge` to make sure that it's one mouse click per frame even if the mouse might be hold down. Otherwise counter increases value per frame while the button is hold down.
