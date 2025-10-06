@@ -299,6 +299,12 @@ To pick from the end of the list we use `-`
 To update an item in a list 
 `dogs[2] = "hans"`
 
+To add an item at a specific index we use
+`dogs.insert(index,item)`
+
+If you want to add multiple elements you need slices
+`items[1:2] = ["Test1","Test"]
+
 To extract parts of the list we can use slicing
 `firstTwoElements = dogs[:2]`
 This returns a slice of the list
@@ -313,5 +319,118 @@ To combine two lists together we can use `.extend()`
 
 Another way is to use `+=`
 `dogs += ["freaky",23]`
+
+To remove an element we can use
+`dogs.remove("Jim")`
+
+If you want to remove and return the removed element we can use
+`removed = dogs.pop("Jim")`
+
+When all the elements of a list have the same data type we can use `.sort()` to sort the list.
+It organises by *uppercase* letters first then by *lowercase*. If you want to ignore that you can use.
+`list.sort(key=str.lower)`
+
+Be aware that using `.sort()` is actually modifying the original list. So make a copy before
+`sorted items = items[:]`
+
+To sort a list without modifying the original list you can use `sorted()`
+`sorted(items,key= str.lower)`
+
+## Tuples
+Tuples are a data structure that allow to create immutable data structures. *Immutable* means once it is created it can't be changed/modified.
+
+`names = ["Roger","Harald"]`
+
+Tuples are ordered like a list, so we can use the index
+
+`names[0]`
+`names.index("Roger")` This returns the index of the element.
+
+If you want to check if element is inside tuple
+`"Roger" in names`
+
+## Dictionary
+A *dictionary* allows you to create *key-value* pairs.
+A *key* can be any immutable value.
+```py
+dog = {"name": "harald"}
+dog2 = {"name":"rolf",
+        "age": 8}
+
+print(dog2["name"]) #prints "rolf"
+```
+
+To change the value of a specific key
+`dog["name"] = "Shorty"`
+
+A way to get a specific element is using the `.get()` method.
+
+`dog.get("name")`
+This also allows you to add a *default* value if it can't find the element.
+`dog.get("color","blue")`
+
+To delete and item from a dictionary and retrieving the *key* of the deleted item we use `.pop()`
+`dog.pop("name")`
+
+If you want to delete the *last added* key-value pair we can use
+`dog.popitem()`
+
+To check if a *key* is inside a dictionary 
+`"color" in dog`
+
+To get a list with the keys/values of a dictionary
+`list(dog.keys())`
+`list(dog.values())`
+
+You can also return all the items of a dictionary as a list of tuples
+`list(dog.items())`
+
+To calculate length of dictionary
+`len(dog)`
+
+If you want to add a key-value pair
+`dog["location"] = "Berlin"`
+
+To delete a key value pair
+`del dog["name"]`
+
+To copy a dictionary
+`copiedDict = dog.copy()`
+
+## Sets
+Sets are similar to tuples but they are *not ordered* and they are *mutable*.
+Special about sets is also that they can't have an item twice. Useful for cases where you want to make sure that there is only one of each items in a set.
+
+`names = {"Roger","Harald"}`
+
+We can intersect to sets
+```py
+set1 = {"Hans","Roger"}
+set2 = {"Hans"}
+intersect = set1 & set2 # -> Returns "Hans" because it is in both sets
+```
+
+To create union of two sets
+`union = set1 | set2`
+
+To get the difference between two sets
+`diff = set1 - set2`
+
+To check if one set is a *superset* or *subset* of the other.
+
+Has *set1* everything from *set2*
+`super = set1 > set2`
+
+Has *set2* everything from *set1*
+
+`sub = set1 < set1`
+
+With `len(set)` we can count the length of a set.
+
+To convert a set into a list
+`list(set1)`
+
+## Functions
+
 
 
