@@ -36,5 +36,7 @@ Count inputs of operator
 
 Round values `round(val,2)`
 
+Test if value is even or not `val%2`
+
 
 https://interactiveimmersive.io/blog/python/python-cheat-sheet-for-touchdesigner-developers/

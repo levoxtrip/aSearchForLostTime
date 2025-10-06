@@ -14,7 +14,7 @@
 
 [Reference Values with Math Library](ReferenceValueswithMathLibrary.md)
 
-[Scripting Cheatsheet](ScriptingCheatSheet.md)
+[Scripting Cheatsheet](CheatSheetScripting.md)
 
 [Set Cook Flag Operator](SetCookFlagOperator.md)
 
