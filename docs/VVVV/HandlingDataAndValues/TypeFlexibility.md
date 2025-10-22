@@ -35,3 +35,21 @@ In this context, signature refers to the unique identifier of a method, which in
 ![Overloading Operations Img](../img/OverloadingOperations.png)
 
 Different pin names don't result to a *unique identifier*
+
+## Type Switch
+![Type Switch Region](../img/TypeSwitchRegion.png)
+
+If you have a certain range of types and you want to convert them to a specific type you can use `TypeSwitch` node. Inside of the region you can't use generic types without giving the input and output a specific type. To be able to connect input and output you need to define there type. You also need to assign the node that you want to use between them to a matching function - right click on node and *assign* to *Match Func*.
+
+The `Type Switch` only takes *object types* only.
+
+Internally the `TypeSwitch` runs similar as `CastAs`*if blocks*. It tries to cast something as *float* then if that wasn't successful it tries to cast it as the next type.
+
+## Upcasting
+*Upcasting* is when you want to convert from a sub data type to a super datatype. This is only possible in `Sequence` in VVVV. It doesn't work for `Spread` or value types like float or integer.
+
+![Upcasting Types Img](../img/UpcastingTypes.png)
+
+In some cases the compiler finds a way to cast a type to another. A work around is to use a `ForEach` loop and just pipe it through it and then connect it to a `Spread` of the other type.
+
+![For Each Upcasting](../img/ForEachUpcasting.png)

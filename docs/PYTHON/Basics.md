@@ -431,6 +431,37 @@ To convert a set into a list
 `list(set1)`
 
 ## Functions
+Functions let us create instructions that get executed when needed.
+They also allow us to decompose programs into managable parts.
+
+```py
+def func_name():
+    print("hallo")
+
+# to call the function
+func_name()
+```
+
+The name of the function should be a clear description of what is executed.
+
+A function can accept one or multiple parameters.
+```py
+def hello(name,age):
+    print("My name is " +name)
+```
+
+### Difference Parameter and Arguments
+*Parameters* are the values accepted by the function inside the function definition
+
+*Arguments* are values we pass to the function when we call it.
+
+We also can set *default*  values for the *arguments*. If no value gets passed into the function, the default value gets used
+
+```py
+def hello(name="Default name"):
+    print(name)
+hello() # -> "Default name"
+```
 
 
 

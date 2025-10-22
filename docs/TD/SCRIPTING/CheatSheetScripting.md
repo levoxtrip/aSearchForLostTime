@@ -16,6 +16,9 @@ Get width/ height of child operator
 `op('/out1').width`
 `op('/out1').height`
 
+Operator index
+`me.digits`
+
 # Channels
 Referencing Channels
 `op('constant1')[0]` <- First channel 

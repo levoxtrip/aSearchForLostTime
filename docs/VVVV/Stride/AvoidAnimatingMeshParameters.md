@@ -5,9 +5,6 @@ tags:
  - VVVV/Stride
  - VVVV/FX
  - VVVV/Performance
-
-
-
 ---
 
 ![Avoid Animating Mesh Parameters](../img/AvoidAnimatingMeshParameters.png)

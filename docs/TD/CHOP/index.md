@@ -20,11 +20,15 @@
 
 [Detect How Fast Value Changes](DetectHowFastValueChanges.md)
 
+[Logic With CHOPs](LogicWithCHOPS.md)
+
 [Hold last changed value](HoldLastChangedValue.md)
 
 [Let Value Slowly Decrease](LetValueSlowlyDecrease.md)
 
 [LagCHOP](LagCHOP.md)
+
+[Logic With CHOPS](LogicWithCHOPS.md)
 
 [Only Track Mouse Values In Window](OnlyTrackMouseValuesInWindow.md)
 

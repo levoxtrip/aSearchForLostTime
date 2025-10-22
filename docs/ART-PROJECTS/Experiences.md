@@ -14,4 +14,11 @@ The most memorable experiences in a person’s life are filled with color, yes, 
 - Excitement 
 - Involvement 
 - Interactive 
-- Information 
+- Information
+- Inspiration 
+
+
+## Questions
+How do I want the recipient to feel at the moment?
+
+How can you bring inspiration in the life of the recipient?

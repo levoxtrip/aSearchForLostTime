@@ -5,3 +5,5 @@ tags:
 ---
 # Programming
 [General Rules](GeneralRules.md)
+
+[Learning Resources](LearningResources.md)
