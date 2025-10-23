@@ -4,6 +4,7 @@ on:
     branches:
       - master
       - main
+
 permissions:
   contents: write
   pages: write
@@ -87,7 +88,6 @@ jobs:
             # Check for missing dependencies
             if grep -q "No module named" build.log; then
               echo "❌ Missing Python module detected"
-              echo "Trying to identify missing module..."
               grep "No module named" build.log
             fi
             
@@ -111,9 +111,16 @@ jobs:
             
             exit $EXIT_CODE
           }
-      
-      - name: If build succeeds, deploy
+
+      # ✅ Upload built site as an artifact for Pages
+      - name: Upload built site
         if: success()
-        run: |
-          echo "Build successful! Deploying to GitHub Pages..."
-          mkdocs gh-deploy --force --verbose
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      # ✅ Deploy to GitHub Pages (new method)
+      - name: Deploy to GitHub Pages
+        if: success()
+        id: deployment
+        uses: actions/deploy-pages@v4
