@@ -115,9 +115,18 @@ jobs:
       # ✅ Upload built site as an artifact for Pages
       - name: Upload built site
         if: success()
+        run: |
+          echo "Contents of the current directory:"
+          ls -la
+          echo "Contents of the site directory (if exists):"
+          ls -la site || echo "No site directory found"
+        shell: bash
+
+      - name: Upload built site artifact
+        if: success()
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: ./site
 
       # ✅ Deploy to GitHub Pages (new method)
       - name: Deploy to GitHub Pages
