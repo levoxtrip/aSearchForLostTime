@@ -43,7 +43,24 @@ To render as Mesh as wireframe we need to add `RasterizerStateDescription` and s
 
 ![Stride WireFrame Mesh Img](../img/StrideWireFrameMesh.png)
 
+## 3D Primitives
+Stride provides basic 3D primitives like `Box`,`Sphere`,`Cylinder`,`Cone`,`Torus` or `Capsule` as well as `GeoSphere`. These primitives are also available as Meshes.
 
+## Instancing
+There are several ways to instance shapes in VVVV.
+
+### Instancing Spread Component
+One way to instance shapes in VL.Stride is to use the `InstancingSpreadComponent`. For that we create *Transformation Matrix data* in a Sequence like a `Spread` and use it as the `Instance Transformations` input.
+For a random position of our primitive we can for example use a `RandomSpread(3D)`, set its values in an `ForEach` to the `Translation` or `Rotation` and then use that data for the `Instance Transfromations` of the `InstancingSpreadComponent`.
+![Instancing Spread Component Img](../img/InstancingSpreadComponent.png)
+
+To be able to use the data for the `Components` input of the primitive, with a `FromValue(Spread)` node, we need to convert it into `Spread<EntityComponents>`.
+
+The `InstancingSpreadComponent` has a `ModelTransformUsage` parameter that allows to define how the world matrix data of the instanced shape gets multiplied with the transformations of the main instance.
+
+### Instancing Component
+Another option is to take 
+![Instancing Spread Component Img](../img/InstancingComponent.png)
 
 ## Keyboard Shortcuts
 F2 - Performance meter

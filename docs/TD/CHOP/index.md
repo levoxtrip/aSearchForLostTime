@@ -6,6 +6,8 @@
 
 [Animate Through Data Points](AnimateThroughDataPoints.md)
 
+[Animate Through PatternCHOP](AnimatePatternCHOP.md)
+
 [Assure CHOP Values Stay in Range](AssureCHOPValuesStayInRange.md)
 
 [Combining Channels in PatternCHOP](CombingChannelsPatternCHOP.md)

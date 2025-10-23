@@ -9,6 +9,8 @@ tags:
 
 # Handling Data and Values
 
+[Change Precision Of Float Values](ChangePrecisionValues.md)
+
 [Create Int2 From Two Single Ints](CreateInt2FromSingleInt.md)
 
 [Datatype Conversion](DatatypeConversion.md)
