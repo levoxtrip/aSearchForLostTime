@@ -19,5 +19,5 @@ jobs:
           key: ${{ github.ref }}
           path: .cache
       - run: pip install mkdocs-material
-      - run: pip install "mkdocs-material[imaging]"  # This installs pillow and cairosvg
+      - run: pip install pillow cairosvg
       - run: mkdocs gh-deploy --force
