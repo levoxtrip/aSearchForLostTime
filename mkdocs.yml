@@ -15,7 +15,7 @@ theme:
   language: en
 
 plugins:
-  - social
+  # - social
   - search
   - blog:
       blog_dir: blog
