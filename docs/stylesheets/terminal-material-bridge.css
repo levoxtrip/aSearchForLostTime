@@ -1,0 +1,15 @@
+/* Bridge Terminal.css with Material components */
+.md-header, .md-nav, .md-content {
+  font-family: inherit !important;
+}
+
+/* Ensure tags work properly */
+.md-tag {
+  font-family: monospace, monospace !important;
+}
+
+.md-header {
+  background-color: transparent !important;
+  background: none !important;
+  box-shadow: none !important; /* Also removes the shadow if you don't want it */
+}
