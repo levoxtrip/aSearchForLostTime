@@ -2,59 +2,69 @@ name: ci
 on:
   push:
     branches:
-      - master
       - main
+      - master
+
 permissions:
   contents: write
   pages: write
   id-token: write
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
+    concurrency:
+      group: "pages"
+      cancel-in-progress: true
+
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      
-      - name: Configure Git Credentials
-        run: |
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-      
-      - uses: actions/setup-python@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
-          python-version: 3.x
-      
-      - uses: actions/cache@v3
+          python-version: "3.x"
+
+      - name: Cache dependencies
+        uses: actions/cache@v3
         with:
-          key: ${{ github.ref }}
-          path: .cache
-      
-      - name: Install dependencies
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          path: ~/.cache/pip
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install MkDocs and plugins
         run: |
-          pip install --upgrade pip
+          python -m pip install --upgrade pip
           pip install mkdocs-material
           pip install "mkdocs-material[imaging]"
-      
-      - name: Build site
-        run: mkdocs build --verbose
 
-      - name: Check site directory
+      - name: Build MkDocs site
         run: |
-          echo "Checking site directory..."
-          if [ -d "site" ]; then
-            echo "✅ Site directory exists."
-            ls -la site
-          else
-            echo "❌ Site directory not found!"
-            exit 1
-          fi
+          echo "Building MkDocs site..."
+          mkdocs build --strict --verbose
+          echo "Build complete. Checking output folder..."
+          ls -la site
 
-      - name: Upload built site artifact
+      - name: Upload built site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./site
+          path: site
 
+  deploy:
+    needs: build-and-deploy
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
