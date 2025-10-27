@@ -7,6 +7,8 @@
 
 [Count Up On New Circle](CountUpNewCircle.md)
 
+[Depth In Image Effect](DepthInImageEffect.md)
+
 [Feedback Distortion With LensDistort](FeedbackDistortionLensDistort.md)
 
 [FX Gallery](./FX-Gallery/index.md)
