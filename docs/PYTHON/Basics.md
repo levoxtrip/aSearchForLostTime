@@ -449,7 +449,6 @@ A function can accept one or multiple parameters.
 def hello(name,age):
     print("My name is " +name)
 ```
-
 ### Difference Parameter and Arguments
 *Parameters* are the values accepted by the function inside the function definition
 
@@ -463,5 +462,93 @@ def hello(name="Default name"):
 hello() # -> "Default name"
 ```
 
+If you pass an immutable value (int,strings,booleans,tuple) into a function, and you modify their values inside the function, the new value is not reflected outside the function, unless it is saved back to it.
+
+```py
+def changeVal(value):
+    value = 2
+
+val = 1
+changeVal(val)
+print(val)# prints 1
+```
+So what we change inside our function doesn't really affect whats outside of it.
+
+On the other side if you pass a mutable value(List,Dictionary,Sets) the changes inside a function do change the object.
+
+```py
+def changeVal(value):
+    value[0] = "Horse"
+
+val = ["Dog","Frog"]
+changeVal(val)
+print(val) # ["Horse","Frog"]
+```
+
+The reason is because python passes references to objects, not copies of the object. 
+*mutable* - reference points to same object in memory - modifications affect memory
+
+*immutable* - you can't modifiy them in place - any change creates new object.
 
 
+### Returning Values
+The `return` keyword allows us to give back values from a function.
+```py
+def giveBack(val):
+    return val + 1
+
+
+val = 1
+val = giveBack(val)
+print(val) # 2
+```
+
+If you want that you functions only executes some logic if a parameter got passed you can use
+```py
+def hello(name):
+    if not name:
+        return # directly jumps out of the function if no name or name is False
+    print("Hello " +name)
+```
+
+If you want to return multiple values you can add them to return separated by a comma.
+
+`return val1, val2`
+
+### Variable Scope
+*Variable Scope* defines where variables can be accessed in the code.
+
+*local* - inside current function
+*enclosing* - in outer functions
+*global* - at the modul level
+*build-in* - print,len
+
+```py
+x = "global"
+
+def outer_func():
+    x = "enclosing"
+    print(x)
+
+    def inner_func():
+        x = "local"
+        print(x)
+
+print(x)
+outer_func()
+inner_func()
+```
+
+
+If you want to access a value that is defined in the function above the current executed function you can use `nonlocal` as a prefix to the variable
+
+```py
+def count():
+    count = 0
+
+def count2():
+    nonlocal count
+    count += 1
+```
+
+### Nested Functions

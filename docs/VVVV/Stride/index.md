@@ -16,6 +16,8 @@
 
 [Instancing Shapes in Stride](InstancingInStride.md)
 
+[Split Mesh Into Its Components](SplitMeshIntoItsComponents.md)
+
 [Store Texture In Queue](StoreTextureInQueue.md)
 
 

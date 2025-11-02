@@ -127,7 +127,7 @@ There is also a `HardCast` It gives an error when something is wrong with castin
 # Old
 
 
-VVVV has different ways to create your own datatypes and objects. They allow you to define fields and operations.
+VVVV has different ways to create your own data types and objects. They allow you to define fields and operations.
 
 In VVVV there are:
 - *mutable* datatypes - object can be changed after creation
