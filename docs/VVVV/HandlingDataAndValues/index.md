@@ -23,6 +23,8 @@ tags:
 
 [OOP](OOP.md)
 
+[Output Default Value If Sequence Empty](OutputDefaultValueIfSequenceEmpty.md)
+
 [Round Float To Digits](RoundFloatsToDigits.md)
 
 [Send and Receive Data](SendReceive.md)

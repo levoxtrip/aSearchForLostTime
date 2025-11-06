@@ -59,10 +59,37 @@ To be able to use the data for the `Components` input of the primitive, with a `
 The `InstancingSpreadComponent` has a `ModelTransformUsage` parameter that allows to define how the world matrix data of the instanced shape gets multiplied with the transformations of the main instance.
 
 ### Instancing Component
-Another option is to take 
+Another option is to take the data and create for each entry an *Entity* where we pass `InstanceComponent`. The entities we then pass as a children to the mesh.
 ![Instancing Spread Component Img](../img/InstancingComponent.png)
+
+### GPU Buffer
+For more flexibility we can use *GPU buffer* to do instancing. But you have to patch the buffers yourself.
+
+![Instancing With GPU buffer Img](../img/InstancingGPUBuffer.png)
+
+After creating the transformation data we need to create the inverse matrices to get the correct normal transformation during the light calculations. When you transform geometry with transformation matrix the vertices and normals need to be treated differently.
+`transformedVertex = matrix * originalVertex`
+`transformedNormal = inverseTranspose(matrix) * original Normal`
+
+We pass the converted data into `DynamicBuffer` that we then can use as the inputs for the `InstancingBufferComponent`.
+
+With the `InternalArray(Spread)` we convert a spread to a mutable array datatype.
+
+The `FromPointCloud` node constructs a bounding box with all points.
+
+
+## Lights
+
+### Skybox Light
+We can add cubemaps and other textures to a `SkyboxLight`.
+
+
+## Draw Image in Stride
+To show an image inside our stride scene we can use `QuadRenderer` or `FullScreenQuadRenderer` and assign a `FileTexture` or a generative texture from `VL.Stride.TextureFX`
+
 
 ## Keyboard Shortcuts
 F2 - Performance meter
 F3 - Profiler - When active you can hit F5 to cylcle through cpu,gpu events.
 F4 - Debug View - Grid with measurments, coordinate system, light source, camera
+R - Reset OrbitCamera View in Window

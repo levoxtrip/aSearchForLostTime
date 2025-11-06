@@ -3,7 +3,7 @@
 
 # SKIA
 
-[General Skia](GeneralSkia.md)
+[Skia Basics](SkiaBasics.md)
 
 [Image Filter Skia](ImageFilterInSkia.md)
 

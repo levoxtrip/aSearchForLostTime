@@ -2,7 +2,7 @@
 
 # UI
 
-[Get Value of Current Momentary Button](GetValCurrentMomentaryBtn.md)
+[Get Value of Current Radio Button](GetValCurrentRadioBtn.md)
 
 [Reference Button Names From Table](ReferenceButtonNamesFromTable.md)
 
