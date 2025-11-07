@@ -2,6 +2,7 @@
 comments: true
 tags:
   - VVVV
+  - VVVV/Animation
 ---
 
 ![Animate Between Colors With Smoothstep Img](../img/SmoothStepAnimation.png)

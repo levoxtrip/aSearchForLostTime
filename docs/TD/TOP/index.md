@@ -5,6 +5,8 @@
 
 [32-bit float Pixel Format](32bitPixelformat.md)
 
+[Analyze Pixel-Color to Trigger Events](AnalyzsePixelColorToTrigger.md)
+
 [Change Coloring TOP Texture](ChangeColoringImages.md)
 
 [Count Up On New Circle](CountUpNewCircle.md)

@@ -16,9 +16,13 @@
 
 [Dynamic Mesh From Data](./DynamicMeshFromData.md)
 
+[Follow Object With Camera](FollowObjectWithCamera.md)
+
 [Generate Dynamic Mesh With Noise Surface](GenerateDynamicMeshWithNoiseSurface.md)
 
 [Instancing Shapes in Stride](InstancingInStride.md)
+
+[Render Different Objects in Different Render Outputs](RenderDifferentObjectsinDifferentRenderOutputs.md)
 
 [Split Mesh Into Its Components](SplitMeshIntoItsComponents.md)
 

@@ -2,7 +2,7 @@
 
 
 # Animations
-
+[Animate Between Two Values](AnimateBetweenTwoValues.md)
 
 [Animate Between Colors With Smoothstep](AnimateBetweenColorsSmoothstep.md)
 

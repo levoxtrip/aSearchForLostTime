@@ -12,6 +12,8 @@
 
 [Get The Height From Top](GetTheHeightFromTop.md)
 
+[Get Current Value Of Parameter, Channel, Expression](GetCurrentValueOfParameter.md)
+
 [Reference Values with Math Library](ReferenceValueswithMathLibrary.md)
 
 [Scripting Cheatsheet](CheatSheetScripting.md)
