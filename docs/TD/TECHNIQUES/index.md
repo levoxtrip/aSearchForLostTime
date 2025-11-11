@@ -8,4 +8,6 @@
 
 [FaceTracking](FaceTracking.md)
 
+[Fallback Channels If Not Enough Sensor Data](FallbackChannelsNotEnoughSensorData.md)
+
 [Output Transparent Video](OutputTransparentVideos.md)

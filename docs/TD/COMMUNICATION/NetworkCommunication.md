@@ -5,7 +5,7 @@ tags:
 
 ---
 
-# network Communication
+# Network Communication
 
 With `TouchOut` we can communicate between networks and machines - We can send TOP,CHOP,DAT data.
 This allows us to send data from one TouchDesigner patch to another TouchDesigner patch.

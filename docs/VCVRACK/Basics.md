@@ -94,3 +94,12 @@ Short burst voltage that goes `HIGH` and directly changes its state to `LOW` - s
 We can use trigger for exmple for envelopes that control sounds that don't have sustain phase.
 
 #### Gate
+
+
+
+
+## Basic Sounds
+### Snare
+To build a Snare we need a `Noise` module which is connected to a *high-pass-filter* that only lets through the higher sounds. With an `ADSR` module connected to `VCA` you shape how amplitude behaves when the *ADSR* is triggered by a *gate* signal.
+
+![Basic Snare](./img/BasicSnare.png)

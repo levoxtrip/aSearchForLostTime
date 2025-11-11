@@ -6,7 +6,11 @@
 
 [Stride Texture FX Basics](StrideTextureFXBasics.md)
 
+---
+
 [Avoid Animating Mesh Parameters](AvoidAnimatingMeshParameters.md)
+
+[Combine Layers Of Materials](CombineLayersOfMaterials.md)
 
 [Convert Mesh Into Normals](ConvertMeshIntoNormals.md)
 
@@ -21,6 +25,8 @@
 [Generate Dynamic Mesh With Noise Surface](GenerateDynamicMeshWithNoiseSurface.md)
 
 [Instancing Shapes in Stride](InstancingInStride.md)
+
+[PatchScript Component to Extent Entities](PatchScriptComponent.md)
 
 [Render Different Objects in Different Render Outputs](RenderDifferentObjectsinDifferentRenderOutputs.md)
 

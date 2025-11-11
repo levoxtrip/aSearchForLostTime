@@ -15,6 +15,8 @@
 
 [SOP](./SOP/index.md)
 
-[Interesting Links](InterestingLinks.md)
-
 [UI](./UI/index.md)
+
+[TECHNIQUES](./TECHNIQUES/index.md)
+
+[Interesting Links](InterestingLinks.md)

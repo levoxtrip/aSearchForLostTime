@@ -24,3 +24,5 @@
 [Point Sprite Particle System](PointSpriteParticleSystem.md)
 
 [Rotate Camera On Path](RotateCameraOnPath.md)
+
+[Trigger Specific Amount Of Particles Per Trigger Event](TriggerSpecificAmountParticlesPerEvent.md)

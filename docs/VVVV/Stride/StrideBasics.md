@@ -84,6 +84,23 @@ The `FromPointCloud` node constructs a bounding box with all points.
 We can add cubemaps and other textures to a `SkyboxLight`.
 
 
+## Materials
+To manipulate or exaggerated certain material properties we can use the `Vl.Stride.TextureFX` library.
+
+### Texture maps for materials
+If you want to use textures to set values like brightness or metallness for your material you can use `FileTextureGrayscale`.
+To use a *normal texture* you can use `FileTextureNormalMap`, connect it to a `ColorMap` node, to convert the texture into vector4 data that we then can use in a `Normal` node. We then have the normal data that we can input into a `PBRMaterial(Metallic)`
+
+### Emissive Material
+With the `Emissive` node we can create a material that emits lights. If you want that the material don't emits the same amount over the the surface you can use a texture to define where you want the material to be emissive. Connect the texture with a `ColorMap` into the `Emissive` node. To be able to see the emission we post effects applied with `PostFX` and `Bloom` node connected to the `SceneWindow`    
+
+![Emissive Material Img](../img/EmissiveMaterial.png)
+
+### Material Displacement
+The `Displacement` node allows us to create *Displacement textures* and there intensity. Adapt the *tesselation* of the model to get more or less detailed displacement.
+
+![Displacement Material Img](../img/DisplacementMap.png)
+
 ## Draw Image in Stride
 To show an image inside our stride scene we can use `QuadRenderer` or `FullScreenQuadRenderer` and assign a `FileTexture` or a generative texture from `VL.Stride.TextureFX`
 
