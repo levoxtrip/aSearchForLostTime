@@ -26,6 +26,8 @@
 
 [Instancing Shapes in Stride](InstancingInStride.md)
 
+[Move Objects Along A Sphere Surface](MoveObjectsAlongSphereSurface.md)
+
 [PatchScript Component to Extent Entities](PatchScriptComponent.md)
 
 [Render Different Objects in Different Render Outputs](RenderDifferentObjectsinDifferentRenderOutputs.md)
@@ -35,6 +37,8 @@
 [Store Texture In Queue](StoreTextureInQueue.md)
 
 [Texture Mask in Stride](TextureMaskInStride.md)
+
+[3D Position Trail Effect](3DPositionTrailEffect.md)
 
 
 
