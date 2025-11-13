@@ -21,6 +21,8 @@ tags:
 
 [Holding Last Changed Value](HoldingLastChangedValue.md)
 
+[Increase Integer By One](IncreaseIntegerByOne.md)
+
 [OOP](OOP.md)
 
 [Output Default Value If Sequence Empty](OutputDefaultValueIfSequenceEmpty.md)

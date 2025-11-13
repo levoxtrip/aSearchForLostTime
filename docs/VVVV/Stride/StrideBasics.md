@@ -18,10 +18,15 @@ Each entity can also be a parent of spread of child entities. We can plug them i
 
 ![Children Entities Img](../img/StrideChildrenEntities.png)
 
-
-
 On the `Components` input of the entity we can add special behavior and functionality - for example physics behavior, Instancing and more.
 
+### Scene Window
+The `SceneWindow` node allows us to output and show our created scene.
+
+#### Get size Of Window
+To get the size of our `SceneWindow` we can connect a `Size(2D.Rectangle)` node to the `Clientbounds` output of the `SceneWindow`
+
+![Scene Size img](../img/SceneSize.png)
 
 ## Stride Transformations
 Stride has different ways to transform an entity. We can use `TransformSRT` but also use instead the *matrix operations* `Translation`,`Rotation`,`Scaling` of type `3D.Matrix` as well as `Translate`,`Rotate`,`Scale` of type `3D.Transform`.
@@ -45,6 +50,12 @@ To render as Mesh as wireframe we need to add `RasterizerStateDescription` and s
 
 ## 3D Primitives
 Stride provides basic 3D primitives like `Box`,`Sphere`,`Cylinder`,`Cone`,`Torus` or `Capsule` as well as `GeoSphere`. These primitives are also available as Meshes.
+
+
+### Draw a Ray
+![Draw A Ray Img](../img/DrawARay.png)
+
+To draw a ray we can use `Ray(Join)` node and connect it with a `RayRenderer`.
 
 ## Instancing
 There are several ways to instance shapes in VVVV.
@@ -101,8 +112,30 @@ The `Displacement` node allows us to create *Displacement textures* and there in
 
 ![Displacement Material Img](../img/DisplacementMap.png)
 
-## Draw Image in Stride
+
+## Render Settings
+### Render Mesh With Outline
+To render the outline of a mesh we can use `MeshOutlineComponent`, connect it to `FromValue` and add it to the `Components` input of our mesh.
+
+![Mesh Outline Component Img](../img/MeshOutlineComponent.png)
+
+### Render Mesh With Wireframe
+If you want to add wireframe on top of your material you can add `WireframeComponent` combined with `FromValue` and set it as the `Components` input of the model.
+
+![Wireframe Component Img](../img/WireFrameComponent.png)
+
+
+## Draw Image In Stride
 To show an image inside our stride scene we can use `QuadRenderer` or `FullScreenQuadRenderer` and assign a `FileTexture` or a generative texture from `VL.Stride.TextureFX`
+
+### Show QuadRenderer With Aspect Ratio Of Texture
+You can use `WithinCommonSpace` to show your `QuadRenderer` in the Aspect Ratio of your texture input.
+
+![Show QuadRenderer With Aspect Ratio Of Texture Img](../img/ShowQuadRendererInAspectRatioTexture.png)
+
+## Draw Fixed Background In Stride
+`Background` node allows to add a fixed background texture to your scene. It also allows us to decide if we want 2D or spherical mapping of the texture.
+
 
 
 ## Keyboard Shortcuts
