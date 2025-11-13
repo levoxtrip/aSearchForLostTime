@@ -1,0 +1,1170 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://levoxtrip.github.io/aSearchForLostTime/VVVV/Stride/StrideBasics/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Stride Basics - A Search For Lost Time</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.4/dist/terminal.min.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/terminal-material-bridge.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Stride Basics - A Search For Lost Time" />
+<meta property="og:image" content="https://levoxtrip.github.io/aSearchForLostTime/assets/images/social/VVVV/Stride/StrideBasics.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://levoxtrip.github.io/aSearchForLostTime/VVVV/Stride/StrideBasics/" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="Stride Basics - A Search For Lost Time" />
+<meta property="twitter:image" content="https://levoxtrip.github.io/aSearchForLostTime/assets/images/social/VVVV/Stride/StrideBasics.png" />
+</head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#stride-basics" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="A Search For Lost Time" class="md-header__button md-logo" aria-label="A Search For Lost Time" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            A Search For Lost Time
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Stride Basics
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../blog/" class="md-tabs__link">
+          
+  
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="A Search For Lost Time" class="md-nav__button md-logo" aria-label="A Search For Lost Time" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    A Search For Lost Time
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Blog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archive
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Archive
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/archive/2025/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2025
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Categories
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Categories
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/art/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ART
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/glsl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GLSL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/mediapipe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MediaPipe
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/newentries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NewEntries
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PYTHON
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/programming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/td/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/tia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TIA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/tic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TIC
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/til/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TIL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/terminal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terminal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/unity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/vcvrack/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VCVRack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/vvvv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VVVV
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../blog/category/ffmpeq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ffmpeq
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <nav class="md-tags" >
+    
+      
+      
+      
+      
+        <span class="md-tag">VVVV</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">VVVV/FX</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">VVVV/Stride</span>
+      
+    
+  </nav>
+
+
+
+<h1 id="stride-basics">Stride Basics</h1>
+<h2 id="stride-scene">Stride Scene</h2>
+<h3 id="entity">Entity</h3>
+<p>A <em>Scene</em> in Stride contains <em>Entities</em> which are the building blocks of the 3D scene - <code>Plane</code>, <code>Sphere</code>,<code>Box</code>, <code>Camera</code>, <code>Lights</code>.</p>
+<p>Each entity can also be a parent of spread of child entities. We can plug them into the <code>Children</code> input of an entity. This also allows us to create herachies where the children transformations behave relative to the parent transformation. A way to group the children is either with <code>Cons</code> node or a <code>Spread</code>.</p>
+<p><img alt="Children Entities Img" src="../../img/StrideChildrenEntities.png" /></p>
+<p>On the <code>Components</code> input of the entity we can add special behavior and functionality - for example physics behavior, Instancing and more.</p>
+<h3 id="scene-window">Scene Window</h3>
+<p>The <code>SceneWindow</code> node allows us to output and show our created scene.</p>
+<h4 id="get-size-of-window">Get size Of Window</h4>
+<p>To get the size of our <code>SceneWindow</code> we can connect a <code>Size(2D.Rectangle)</code> node to the <code>Clientbounds</code> output of the <code>SceneWindow</code></p>
+<p><img alt="Scene Size img" src="../../img/SceneSize.png" /></p>
+<h2 id="stride-transformations">Stride Transformations</h2>
+<p>Stride has different ways to transform an entity. We can use <code>TransformSRT</code> but also use instead the <em>matrix operations</em> <code>Translation</code>,<code>Rotation</code>,<code>Scaling</code> of type <code>3D.Matrix</code> as well as <code>Translate</code>,<code>Rotate</code>,<code>Scale</code> of type <code>3D.Transform</code>.</p>
+<p><mark>??? What is the actual different between them?=</mark></p>
+<h2 id="2d-primitives">2D Primitives</h2>
+<p>In <em>Stride</em> we have the 2D primitives <code>Disc</code>,<code>Plane</code> and <code>RoundRectangle</code></p>
+<p><img alt="Stride 2D Primitives Img" src="../../img/Stride2DPrimitives.png" /></p>
+<h2 id="2d-meshes">2D Meshes</h2>
+<p>If you specifically want to draw meshes you need a <code>MeshRenderer</code> which then gets connected to a <code>RenderEntity</code>.</p>
+<p><img alt="Meshes In Stride Img" src="../../img/MeshRenderer.png" /></p>
+<h2 id="draw-wireframe-mesh">Draw Wireframe Mesh</h2>
+<p>To render as Mesh as wireframe we need to add <code>RasterizerStateDescription</code> and set the Fill mode to <code>Wireframe</code>. For the color of the wireframe we add a <code>ConstantColorShader</code>. The <code>Topology</code> parameter of the <code>MeshRenderer</code> allows different kinds of Wireframes. It is worth experimenting with them.</p>
+<p><img alt="Stride WireFrame Mesh Img" src="../../img/StrideWireFrameMesh.png" /></p>
+<h2 id="3d-primitives">3D Primitives</h2>
+<p>Stride provides basic 3D primitives like <code>Box</code>,<code>Sphere</code>,<code>Cylinder</code>,<code>Cone</code>,<code>Torus</code> or <code>Capsule</code> as well as <code>GeoSphere</code>. These primitives are also available as Meshes.</p>
+<h3 id="draw-a-ray">Draw a Ray</h3>
+<p><img alt="Draw A Ray Img" src="../../img/DrawARay.png" /></p>
+<p>To draw a ray we can use <code>Ray(Join)</code> node and connect it with a <code>RayRenderer</code>.</p>
+<h2 id="instancing">Instancing</h2>
+<p>There are several ways to instance shapes in VVVV.</p>
+<h3 id="instancing-spread-component">Instancing Spread Component</h3>
+<p>One way to instance shapes in VL.Stride is to use the <code>InstancingSpreadComponent</code>. For that we create <em>Transformation Matrix data</em> in a Sequence like a <code>Spread</code> and use it as the <code>Instance Transformations</code> input.
+For a random position of our primitive we can for example use a <code>RandomSpread(3D)</code>, set its values in an <code>ForEach</code> to the <code>Translation</code> or <code>Rotation</code> and then use that data for the <code>Instance Transfromations</code> of the <code>InstancingSpreadComponent</code>.
+<img alt="Instancing Spread Component Img" src="../../img/InstancingSpreadComponent.png" /></p>
+<p>To be able to use the data for the <code>Components</code> input of the primitive, with a <code>FromValue(Spread)</code> node, we need to convert it into <code>Spread&lt;EntityComponents&gt;</code>.</p>
+<p>The <code>InstancingSpreadComponent</code> has a <code>ModelTransformUsage</code> parameter that allows to define how the world matrix data of the instanced shape gets multiplied with the transformations of the main instance.</p>
+<h3 id="instancing-component">Instancing Component</h3>
+<p>Another option is to take the data and create for each entry an <em>Entity</em> where we pass <code>InstanceComponent</code>. The entities we then pass as a children to the mesh.
+<img alt="Instancing Spread Component Img" src="../../img/InstancingComponent.png" /></p>
+<h3 id="gpu-buffer">GPU Buffer</h3>
+<p>For more flexibility we can use <em>GPU buffer</em> to do instancing. But you have to patch the buffers yourself.</p>
+<p><img alt="Instancing With GPU buffer Img" src="../../img/InstancingGPUBuffer.png" /></p>
+<p>After creating the transformation data we need to create the inverse matrices to get the correct normal transformation during the light calculations. When you transform geometry with transformation matrix the vertices and normals need to be treated differently.
+<code>transformedVertex = matrix * originalVertex</code>
+<code>transformedNormal = inverseTranspose(matrix) * original Normal</code></p>
+<p>We pass the converted data into <code>DynamicBuffer</code> that we then can use as the inputs for the <code>InstancingBufferComponent</code>.</p>
+<p>With the <code>InternalArray(Spread)</code> we convert a spread to a mutable array datatype.</p>
+<p>The <code>FromPointCloud</code> node constructs a bounding box with all points.</p>
+<h2 id="lights">Lights</h2>
+<h3 id="skybox-light">Skybox Light</h3>
+<p>We can add cubemaps and other textures to a <code>SkyboxLight</code>.</p>
+<h2 id="materials">Materials</h2>
+<p>To manipulate or exaggerated certain material properties we can use the <code>Vl.Stride.TextureFX</code> library.</p>
+<h3 id="texture-maps-for-materials">Texture maps for materials</h3>
+<p>If you want to use textures to set values like brightness or metallness for your material you can use <code>FileTextureGrayscale</code>.
+To use a <em>normal texture</em> you can use <code>FileTextureNormalMap</code>, connect it to a <code>ColorMap</code> node, to convert the texture into vector4 data that we then can use in a <code>Normal</code> node. We then have the normal data that we can input into a <code>PBRMaterial(Metallic)</code></p>
+<h3 id="emissive-material">Emissive Material</h3>
+<p>With the <code>Emissive</code> node we can create a material that emits lights. If you want that the material don't emits the same amount over the the surface you can use a texture to define where you want the material to be emissive. Connect the texture with a <code>ColorMap</code> into the <code>Emissive</code> node. To be able to see the emission we post effects applied with <code>PostFX</code> and <code>Bloom</code> node connected to the <code>SceneWindow</code>    </p>
+<p><img alt="Emissive Material Img" src="../../img/EmissiveMaterial.png" /></p>
+<h3 id="material-displacement">Material Displacement</h3>
+<p>The <code>Displacement</code> node allows us to create <em>Displacement textures</em> and there intensity. Adapt the <em>tesselation</em> of the model to get more or less detailed displacement.</p>
+<p><img alt="Displacement Material Img" src="../../img/DisplacementMap.png" /></p>
+<h2 id="render-settings">Render Settings</h2>
+<h3 id="render-mesh-with-outline">Render Mesh With Outline</h3>
+<p>To render the outline of a mesh we can use <code>MeshOutlineComponent</code>, connect it to <code>FromValue</code> and add it to the <code>Components</code> input of our mesh.</p>
+<p><img alt="Mesh Outline Component Img" src="../../img/MeshOutlineComponent.png" /></p>
+<h3 id="render-mesh-with-wireframe">Render Mesh With Wireframe</h3>
+<p>If you want to add wireframe on top of your material you can add <code>WireframeComponent</code> combined with <code>FromValue</code> and set it as the <code>Components</code> input of the model.</p>
+<p><img alt="Wireframe Component Img" src="../../img/WireFrameComponent.png" /></p>
+<h2 id="draw-image-in-stride">Draw Image In Stride</h2>
+<p>To show an image inside our stride scene we can use <code>QuadRenderer</code> or <code>FullScreenQuadRenderer</code> and assign a <code>FileTexture</code> or a generative texture from <code>VL.Stride.TextureFX</code></p>
+<h3 id="show-quadrenderer-with-aspect-ratio-of-texture">Show QuadRenderer With Aspect Ratio Of Texture</h3>
+<p>You can use <code>WithinCommonSpace</code> to show your <code>QuadRenderer</code> in the Aspect Ratio of your texture input.</p>
+<p><img alt="Show QuadRenderer With Aspect Ratio Of Texture Img" src="../../img/ShowQuadRendererInAspectRatioTexture.png" /></p>
+<h2 id="draw-fixed-background-in-stride">Draw Fixed Background In Stride</h2>
+<p><code>Background</code> node allows to add a fixed background texture to your scene. It also allows us to decide if we want 2D or spherical mapping of the texture.</p>
+<h2 id="keyboard-shortcuts">Keyboard Shortcuts</h2>
+<p>F2 - Performance meter
+F3 - Profiler - When active you can hit F5 to cylcle through cpu,gpu events.
+F4 - Debug View - Grid with measurments, coordinate system, light source, camera
+R - Reset OrbitCamera View in Window</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2024 <a href="https://github.com/levoxtrip" target="_blank" rel="noopener"> Leon Volbers</a>
+<br>
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="levoxtrip" data-color="#40DCA5" data-emoji="😍"  data-font="Arial" data-text="Support this project" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
